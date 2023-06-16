@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div id="myToast1" class="toast error-toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            error
+        </div>
+        <div class="toast-body">
+            please try again
+        </div>
+    </div>
+
+    <div id="myToast2" class="toast success-toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            success
+        </div>
+        <div class="toast-body">
+            take what you need
+        </div>
+    </div>
+
+    <div class="main-content">
+        {{>header}}
+
+        <p class="p1">Use this site to get your weather!</p>
+
+        <form>
+            <input type="text" placeholder="Enter the location">
+            <button>submit</button>
+        </form>
+
+        <p id="msg1"></p>
+        <p id="msg2"></p>
+    </div>
+
+    {{>footer}}
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
